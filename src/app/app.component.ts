@@ -14,4 +14,8 @@ import {DUMMY_USERS} from "./dummy.users";
 export class AppComponent {
   title = 'EasyTask';
   users = DUMMY_USERS;
+
+  OnSelectUser(id: string) {
+    alert('selected user with id: ' + id);
+  }
 }
