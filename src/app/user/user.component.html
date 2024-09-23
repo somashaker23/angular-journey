@@ -1,6 +1,6 @@
 <div>
   <button (click)="OnSelectUser()" (mouseenter)="OnHover()">
-    <img [src]=imagePath alt="user">
-    <span>{{ selectedUser.name }}</span>
+    <img [src]=imagePath() alt="user">
+    <span>{{ selectedUser().name}}</span>
   </button>
 </div>
