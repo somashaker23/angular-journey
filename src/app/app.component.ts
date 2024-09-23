@@ -13,17 +13,17 @@ import {DUMMY_USERS} from "./dummy.users";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  selectName!: string;
 
   users = DUMMY_USERS;
-
+  selectId = 'u1'
 
   OnSelectUser(id: string) {
-    this.selectName = this.getUserNameById(id);
+    this.selectId = id;
   }
 
-  private getUserNameById(id: string) {
-    const user = DUMMY_USERS.find(user => user.id === id);
+  get getUserNameById() {
+    const user = DUMMY_USERS.find(user => user.id === this.selectId);
+    console.log(user)
     return user ? user.name : "Hey!";
 
   }
