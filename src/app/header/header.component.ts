@@ -11,4 +11,6 @@ import {NgOptimizedImage} from "@angular/common";
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  title = 'EasyTask';
+
 }
