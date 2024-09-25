@@ -16,7 +16,7 @@ import {DUMMY_USERS} from "./dummy.users";
 export class AppComponent {
 
   users = DUMMY_USERS;
-  selectId = 'u1'
+  selectId?: string;
 
   get getUserNameById() {
     const user = this.users.find((user) => user.id === this.selectId)!;

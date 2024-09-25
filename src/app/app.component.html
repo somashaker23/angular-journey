@@ -9,6 +9,8 @@
       </li>
     }
   </ul>
-  <app-tasks [name]="getUserNameById"/>
+  @if (getUserNameById) {
+    <app-tasks [name]="getUserNameById"/>
+  }
 </main>
 
