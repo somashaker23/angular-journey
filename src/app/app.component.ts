@@ -21,7 +21,7 @@ export class AppComponent {
   get getUserNameById() {
     const user = this.users.find((user) => user.id === this.selectId)!;
     console.log(user)
-    return user ? user.name : "Hey!";
+    return user;
 
   }
 
