@@ -12,19 +12,20 @@ import {DUMMY_USERS} from "./dummy.users";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
 
   users = DUMMY_USERS;
   selectId = 'u1'
 
-  OnSelectUser(id: string) {
-    this.selectId = id;
-  }
-
   get getUserNameById() {
-    const user = DUMMY_USERS.find(user => user.id === this.selectId);
+    const user = this.users.find((user) => user.id === this.selectId)!;
     console.log(user)
     return user ? user.name : "Hey!";
 
+  }
+
+  OnSelectUser(id: string) {
+    this.selectId = id;
   }
 }
