@@ -16,16 +16,16 @@ import {DUMMY_USERS} from "./dummy.users";
 export class AppComponent {
 
   users = DUMMY_USERS;
-  selectId?: string;
+  selectUserId?: string;
 
   get getUserNameById() {
-    const user = this.users.find((user) => user.id === this.selectId)!;
+    const user = this.users.find((user) => user.id === this.selectUserId)!;
     console.log(user)
     return user;
 
   }
 
   OnSelectUser(id: string) {
-    this.selectId = id;
+    this.selectUserId = id;
   }
 }
