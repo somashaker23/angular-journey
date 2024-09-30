@@ -10,4 +10,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 4. Attribute Binding (need to understand deep)
 5. intro to signals (`{computed, signal} from '@angular/core'; `)
 6. EventEmitter<Type>(`{EventEmitter} from '@angular/core'; `)
-7. 
+7. Handling Form submission ngSubmit
+8. Handling Submitted data with EventEmitter
+9.  
