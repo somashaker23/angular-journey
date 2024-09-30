@@ -9,3 +9,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 3. Event Binding
 4. Attribute Binding (need to understand deep)
 5. intro to signals (`{computed, signal} from '@angular/core'; `)
+6. EventEmitter<Type>(`{EventEmitter} from '@angular/core'; `)
+7. 
