@@ -12,4 +12,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 6. EventEmitter<Type>(`{EventEmitter} from '@angular/core'; `)
 7. Handling Form submission ngSubmit
 8. Handling Submitted data with EventEmitter
-9.  
+9. Intro to pipes; using DatePipe (`{import {DatePipe} from "@angular/common";}`)
